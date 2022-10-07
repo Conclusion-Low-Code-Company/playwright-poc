@@ -12,7 +12,7 @@ test.describe('Marketplace tests', () => {
   test('Check if personalised welcome message is shown', async ({page}) => {
     await page.locator('text=My Marketplace').click()
     await expect(page.locator(`text=Welcome, ${fullname}!`)).toBeVisible()
-
+    
   })
 })
 
