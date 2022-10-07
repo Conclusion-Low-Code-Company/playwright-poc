@@ -1,0 +1,21 @@
+{
+  "name": "playwright-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Conclusion-Low-Code-Company/playwright-poc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Conclusion-Low-Code-Company/playwright-poc/issues"
+  },
+  "homepage": "https://github.com/Conclusion-Low-Code-Company/playwright-poc#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.26.1"
+  }
+}
