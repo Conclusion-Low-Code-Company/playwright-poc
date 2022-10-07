@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+      "tests:chrome": "playwright test --config=playwright.config.ts --project=chromium",
+      "tests:chrome--headed": "playwright test --config=playwright.config.ts --project=chromium --headed",
+      "tests:firefox": "playwright test --config=playwright.config.ts --project=firefox",
+      "tests:webkit": "playwright test --config=playwright.config.ts --project=webkit",
+      "testsPoc:chrome--headed": "playwright test --config=playwright.config.ts --project=chromium --headed poc.spec.ts"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Conclusion-Low-Code-Company/playwright-poc.git"
