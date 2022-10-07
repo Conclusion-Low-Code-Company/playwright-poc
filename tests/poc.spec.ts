@@ -2,14 +2,16 @@ import { test, expect } from '@playwright/test'
 
 import { loadMarketplaceURL, loginMarketplaceURL } from './helpers'
 
+const fullname = 'Bart Heijs'
+
 test.describe('Marketplace tests', () => {
   test.beforeEach(async ({ page }) => {
     await loadMarketplaceURL(page)
     await loginMarketplaceURL(page)
   })
   test('Check if personalised welcome message is shown', async ({page}) => {
-    await page.locator('text=My Marketplace').click();
-    await expect(page.locator("text=Welcome, Bart Heijs!")).toBeVisible()
+    await page.locator('text=My Marketplace').click()
+    await expect(page.locator(`text=Welcome, ${fullname}!`)).toBeVisible()
 
   })
 })
